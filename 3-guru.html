@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guru - SD Negeri Mawan</title>
+    <link rel="stylesheet" href="6-css/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .upload-container {
+        margin-bottom: 20px;
+      }
+      .preview img {
+        max-width: 200px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Daftar Guru</h1>
+      <p>SD Negeri Mawan - Kabupaten Boven Digoel, Papua Selatan</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="1-index.html">Beranda</a></li>
+        <li><a href="2-profil.html">Profil</a></li>
+        <li><a href="3-guru.html" class="active">Guru</a></li>
+        <li><a href="4-berita.html">Berita</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>Guru SD Negeri Mawan</h2>
+
+      <!-- Kepala Sekolah -->
+      <div class="upload-container">
+        <p><strong>Melkiades Bria Seran, S.Pd</strong> – Kepala Sekolah</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoKepala" accept="image/*" />
+        <div class="preview" id="previewKepala"></div>
+      </div>
+
+      <!-- Wakil Kepala -->
+      <div class="upload-container">
+        <p><strong>[Nama Wakil]</strong> – Wakil Kepala Sekolah</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoWakil" accept="image/*" />
+        <div class="preview" id="previewWakil"></div>
+      </div>
+
+      <!-- Koordinator Kurikulum -->
+      <div class="upload-container">
+        <p><strong>[Nama Kurikulum]</strong> – Koordinator Kurikulum</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoKurikulum" accept="image/*" />
+        <div class="preview" id="previewKurikulum"></div>
+      </div>
+
+      <!-- Guru Kelas 1 -->
+      <div class="upload-container">
+        <p><strong>[Nama Guru 1]</strong> – Guru Kelas 1</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoGuru1" accept="image/*" />
+        <div class="preview" id="previewGuru1"></div>
+      </div>
+
+      <!-- Guru Kelas 2 -->
+      <div class="upload-container">
+        <p><strong>[Nama Guru 2]</strong> – Guru Kelas 2</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoGuru2" accept="image/*" />
+        <div class="preview" id="previewGuru2"></div>
+      </div>
+
+      <!-- Guru Bahasa Indonesia -->
+      <div class="upload-container">
+        <p><strong>[Nama Guru Bahasa]</strong> – Guru Bahasa Indonesia</p>
+        <label>Unggah Foto:</label>
+        <input type="file" id="fotoBahasa" accept="image/*" />
+        <div class="preview" id="previewBahasa"></div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 1rem;
+        background-color: #2c3e50;
+        color: white;
+      "
+    >
+      &copy; 2025 SD Negeri Mawan. All rights reserved.
+    </footer>
+    </script>
+     <script src="7-js/guru.js"></script>
+  </body>
+</html>
